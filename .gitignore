@@ -1,0 +1,24 @@
+# Ignore Maven build files
+target/
+
+# Ignore Gradle build files
+build/
+
+# Ignore IDE files
+.idea/
+*.iml
+*.vscode/
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore temporary files
+*.swp
+*.bak
+
+
+.classpath
+.project
+.settings
+HELP.md

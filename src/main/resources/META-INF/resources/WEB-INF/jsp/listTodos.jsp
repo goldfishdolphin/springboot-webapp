@@ -3,9 +3,9 @@
 <title>Todo page </title>
 </head>
 <body>
-<h1>Welcome to Todo List Page!</h1>
+<h1>Welcome ${name} </h1>
 
-These are tasks:
+These are your tasks to do:
 
 <div>  ${todos}</div>
 </body>

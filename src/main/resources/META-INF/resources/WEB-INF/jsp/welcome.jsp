@@ -8,5 +8,6 @@
 This is a welcome page
 
 <div> Your name: ${name}</div>
+<div><a href="todo-list">Manage</a> your todo list!</div>
 </body>
 </html>

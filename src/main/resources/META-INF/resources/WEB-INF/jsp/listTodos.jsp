@@ -6,12 +6,13 @@
 <title>Todo page</title>
 </head>
 <body>
+<div class= "container">
 <p>Welcome ${name}</p>
 	<h1>Your Todo Tasks:</h1>
 
-<hr>
+
 	
-	<table>
+	<table class="table">
 		<thead>
 			<tr>
 				<th>id</th>
@@ -35,5 +36,6 @@
 	</table>
 	<script src="webjars/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 	<script src="webjars/jquery/3.7.1/jquery.min.js"></script>
+	</div>
 </body>
 </html>

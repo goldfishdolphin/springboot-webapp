@@ -7,7 +7,7 @@
 <h1>Add details of a new task!</h1>
 
 <form method="post">
-Desscription: <input type="text" name ="description">
+Desscription: <input type="text" name ="description" required="required">
 <input type="submit">
 </form>
 

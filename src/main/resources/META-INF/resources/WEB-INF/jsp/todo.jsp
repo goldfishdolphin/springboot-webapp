@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
 <title>New Task </title>
@@ -6,10 +7,12 @@
 <div class="container">
 <h1>Add details of a new task!</h1>
 
-<form method="post">
-Desscription: <input type="text" name ="description" required="required">
+<form:form method="post" modelAttribute="todo">
+Desscription: <form:input type="text" path="description" required="required"/>
+<form:input type="hidden" path="id" />
+<form:input type="hidden" path="done" />
 <input type="submit">
-</form>
+</form:form>
 
 </div>
 

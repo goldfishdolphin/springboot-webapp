@@ -1,31 +1,8 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
-<html>
-<head>
-<link href="webjars/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" >
-<title>Todo page</title>
-</head>
-<body>
-<div class= "container">
-<nav class="navbar navbar-expand-md navbar-light bg-light mb-3 p-1">
-	<a class="navbar-brand m-1" href="">in28minutes</a>
-	<div class="collapse navbar-collapse">
-		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-			<li class="nav-item"><a class="nav-link" href="/todo-list">Todos</a></li>
-		</ul>
-	</div>
-	<ul class="navbar-nav">
-		<li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
-	</ul>	
-</nav>
-<p>Welcome ${name}</p>
-
+<%@ include file="common/header.jspf"%>
+<%@ include file="common/navigation.jspf"%>
+<div class="container">
 	<h1>Your Todo Tasks:</h1>
-
-
-	
+	<p>Welcome ${name}</p>
 	<table class="table">
 		<thead>
 			<tr>
@@ -40,18 +17,16 @@
 					<td>${todo.description}</td>
 					<td>${todo.targetDate }</td>
 					<td>${todo.done}</td>
-					<td><a href="delete-todo?id=${todo.id}" class="btn btn-warning">Delete</a></td>
-					<td><a href="update-todo?id=${todo.id}" class="btn btn-primary">Update</a></td>
-					
+					<td><a href="delete-todo?id=${todo.id}"
+						class="btn btn-warning">Delete</a></td>
+					<td><a href="update-todo?id=${todo.id}"
+						class="btn btn-primary">Update</a></td>
+
 
 				</tr>
 			</c:forEach>
-
 		</tbody>
 	</table>
 	<a href="add-todo" class="btn btn-success">Add Todo</a>
-	<script src="webjars/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-	<script src="webjars/jquery/3.7.1/jquery.min.js"></script>
 	</div>
-</body>
-</html>
+	<%@ include file="common/footer.jspf"%>

@@ -6,19 +6,9 @@
 <title>New Task</title>
 </head>
 <body>
+<%@ include file="common/navigation.jspf" %>
+<%@ include file="common/header.jspf" %>
 
-	<nav class="navbar navbar-expand-md navbar-light bg-light mb-3 p-1">
-	<a class="navbar-brand m-1" href="">in28minutes</a>
-	<div class="collapse navbar-collapse">
-		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-			<li class="nav-item"><a class="nav-link" href="/todo-list">Todos</a></li>
-		</ul>
-	</div>
-	<ul class="navbar-nav">
-		<li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
-	</ul>	
-</nav>
 	<div class="container">
 
 		<h1>Add details of a new task!</h1>
@@ -43,10 +33,5 @@
 		<input class="btn btn-success" type="submit"/>
 		
 		</form:form>
-
-
-		<script src="webjars/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-		<script src="webjars/jquery/3.7.1/jquery.min.js"></script>
-	</div>
-</body>
-</html>
+</div>
+<%@ include file="common/footer.jspf" %>

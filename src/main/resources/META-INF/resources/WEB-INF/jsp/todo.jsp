@@ -1,13 +1,10 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<html>
-<head>
-<link href="webjars/bootstrap/5.3.0/css/bootstrap.min.css"
-	rel="stylesheet">
+
+<%@ include file="common/header.jspf" %>
 <title>New Task</title>
 </head>
 <body>
+
 <%@ include file="common/navigation.jspf" %>
-<%@ include file="common/header.jspf" %>
 
 	<div class="container">
 
@@ -31,7 +28,6 @@
 		<form:input type="hidden" path="id" />
 		<form:input type="hidden" path="done" />
 		<input class="btn btn-success" type="submit"/>
-		
 		</form:form>
 </div>
 <%@ include file="common/footer.jspf" %>

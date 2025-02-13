@@ -4,6 +4,5 @@
 <html>
 <head>
 <link href="webjars/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" >
-<title>Todo page</title>
-</head>
-<body>
+<link href="webjars/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.standalone.min.css" rel="stylesheet" >
+

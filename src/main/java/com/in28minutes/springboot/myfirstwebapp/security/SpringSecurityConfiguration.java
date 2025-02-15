@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.ui.ModelMap;
 @Configuration
 public class SpringSecurityConfiguration {
 
@@ -31,6 +32,9 @@ public class SpringSecurityConfiguration {
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
+	}
+	private String getLoggedinUsername(ModelMap model) {
+		return (String)model.get("name");
 	}
 	
 }

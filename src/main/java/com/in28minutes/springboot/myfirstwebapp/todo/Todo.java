@@ -5,11 +5,18 @@ import java.time.LocalDate;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 import jakarta.validation.constraints.Size;
 
 @Entity
 public class Todo {
+	public Todo() {
+		
+	}
 	public Todo(int id, String username, String description, LocalDate targetDate, boolean done) {
 		super();
 		this.id = id;
@@ -19,7 +26,7 @@ public class Todo {
 		this.done = done;
 	}
 	@Id
-	@GeneratedValue
+    @GeneratedValue
 	private int id;
 	private String username;
 	@Size(min=10, message= "Enter at least 10 characters")
